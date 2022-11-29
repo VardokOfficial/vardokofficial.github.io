@@ -1,0 +1,302 @@
+:root{
+    --color-background: #00042c;
+    --color-font: #18f36c;
+    --font-menu:'League Spartan', sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: var(--font-menu);
+}
+
+
+/*=================HEADER===============*/
+
+.header{
+    background: var(--color-background);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--color-font);
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-toggle{
+    color: var(--color-font);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+}
+
+.nav-menu-link:hover{
+    border-bottom: 3px solid;
+    transition: .2s ease;
+}
+
+.nav-menu-link_active{
+    border: 3px solid;
+    border-radius: 20px;
+    padding: 8px 22px;
+}
+
+/*=================MENU===============*/
+
+               /*SECTION 1*/
+
+.section-1{
+    background: #141951;
+    padding: 100px 0;
+}
+
+.container-menu{
+    display: flex;
+    margin: 50px 0;
+}
+
+.container-text{
+    margin-left: 10%;
+    width: 50%;
+}
+
+.background-ct-1{
+    display: none;
+}
+
+.background-ct{
+    width: 80%;
+}
+
+.home-title{
+    color: var(--color-font);
+    font-size: 65px;
+    margin: 0;
+    padding: 0;
+}
+
+.home-subtitle{
+    font-size: 28px;
+    color: var(--color-font);
+    margin: 0;
+    padding: 0;
+}
+
+.home-text{
+    color: var(--color-font);
+    text-align: start;
+    font-size: 20px;
+    width: 350px;
+    margin-bottom: 70px;
+}
+
+
+
+#background-menu{
+    width: 90%;
+}
+
+.home-button{
+    background: #18f36c;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px #00042ce0;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 22px;
+    color: #444986;
+    transition: all .3s ease;
+}
+
+.home-button:hover{
+    background: #11be54;
+
+}
+
+@media (max-width: 768px){
+
+    .header{
+        height: 60px;
+    }
+    
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        margin: 0;
+        padding: 20px 0;
+        align-items: center;
+        
+        background-color: #262e70;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: .3s ease;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+    
+    .nav-menu-item{
+        line-height: 70px;
+        font-size: 22px;
+    }
+    
+    
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        border: 3px solid;
+        border-radius: 20px;
+    }
+
+    section{
+        background: #141951;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .container-text{
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .home-title{
+        font-size: 35px;
+    }
+    
+    .home-text{
+        
+        width: 350px;
+        margin: 25px 0 70px;
+    }
+    
+
+    #background-menu{
+        width: 100%;
+    }
+
+    .container-menu{
+        display: block;
+        margin: 0 0 30px;
+    }
+
+    .background-ct-1{
+        width: 100%;
+        margin-bottom: 50px;
+        display: block;
+    }
+    
+    .background-ct{
+        display: none;
+    }
+
+    .container-info{
+        flex-direction: column;
+        margin-left: 0;
+        padding: 0;
+        width: 0;
+    }
+
+    #background-menu-2{
+        width: 100%;
+    }
+}
+
+
+               /*SECTION 2*/
+
+.section-2{
+    background: var(--color-background);
+    width: 100%;
+}
+
+.title-2 {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.title-2 .home-subtitle{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 0;
+    width: 15%;
+    border-bottom: 4px solid;
+    font-size: 32px;
+}
+
+.container-info{
+    margin-left: 10%;
+    padding-bottom: 50px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-info .home-title{
+    width: 250px;
+    font-size: 50px;
+}
+
+.background-ct-2{
+    margin-right: 60px;
+}
+
+#background-menu-2{
+    width: 330px;
+}
